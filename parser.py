@@ -20,9 +20,6 @@ elif (len(sys.argv) > 1):
 
 SCAN = sys.argv[1].strip('https://').strip('http://').strip('/')
 
-print('SCAN', SCAN)
-print('NUMBER', NUMBER_OF_PAGES)
-
 f = open(f'./{SCAN}_wellKnownAddresses.csv', 'w')
 writer = csv.writer(f)
 header = ['Address', 'Name']
